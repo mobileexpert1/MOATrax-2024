@@ -1,0 +1,6 @@
+framework module MapboxStatic {
+  umbrella header "MapboxStatic.swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

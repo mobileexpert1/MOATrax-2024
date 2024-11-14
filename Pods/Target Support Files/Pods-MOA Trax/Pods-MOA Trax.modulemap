@@ -1,0 +1,6 @@
+framework module Pods_MOA_Trax {
+  umbrella header "Pods-MOA Trax-umbrella.h"
+
+  export *
+  module * { export * }
+}
