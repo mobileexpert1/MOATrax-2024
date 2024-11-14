@@ -1,0 +1,11 @@
+framework module GeoTiffDecoder {
+  umbrella header "GeoTiffDecoder.h"
+
+  export *
+  module * { export * }
+}
+
+module GeoTiffDecoder.Swift {
+    header "GeoTiffDecoder-Swift.h"
+    requires objc
+}

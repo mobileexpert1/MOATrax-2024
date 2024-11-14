@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_background" translatesAutoresizingMaskIntoConstraints="NO" id="2mB-v6-efs">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VEh-NY-HFG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="295.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_appIcon" translatesAutoresizingMaskIntoConstraints="NO" id="iVp-RT-SEu">
+                                        <rect key="frame" x="142" y="113" width="130" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="iVp-RT-SEu" secondAttribute="height" multiplier="106:57" id="6u2-N0-65U"/>
+                                            <constraint firstAttribute="height" constant="70" id="u0Z-En-WdQ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="iVp-RT-SEu" firstAttribute="centerX" secondItem="VEh-NY-HFG" secondAttribute="centerX" id="PHe-7U-m3o"/>
+                                    <constraint firstItem="iVp-RT-SEu" firstAttribute="centerY" secondItem="VEh-NY-HFG" secondAttribute="centerY" id="Qle-sM-6n4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="VEh-NY-HFG" secondAttribute="trailing" id="3vg-sH-Ntf"/>
+                            <constraint firstItem="VEh-NY-HFG" firstAttribute="height" secondItem="2mB-v6-efs" secondAttribute="height" multiplier="0.33" id="5hi-p7-csG"/>
+                            <constraint firstItem="2mB-v6-efs" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="EB3-Nc-9FJ"/>
+                            <constraint firstItem="VEh-NY-HFG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MQ2-Qx-rFE"/>
+                            <constraint firstAttribute="trailing" secondItem="2mB-v6-efs" secondAttribute="trailing" id="NOK-Iy-3V6"/>
+                            <constraint firstAttribute="bottom" secondItem="2mB-v6-efs" secondAttribute="bottom" id="RDN-eI-8NQ"/>
+                            <constraint firstItem="VEh-NY-HFG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dvW-LI-yt2"/>
+                            <constraint firstItem="2mB-v6-efs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="th0-hB-its"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_appIcon" width="383.5" height="205"/>
+        <image name="ic_background" width="375" height="812"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

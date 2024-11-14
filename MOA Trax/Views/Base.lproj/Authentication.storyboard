@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c2F-FK-VsT">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Big-Caslon-Black.otf">
+            <string>BigCaslonFB-Black</string>
+        </array>
+        <array key="Gibson-Light.otf">
+            <string>Gibson-Light</string>
+        </array>
+        <array key="Gibson-Regular.ttf">
+            <string>Gibson-Regular</string>
+        </array>
+        <array key="Gibson-SemiBold.ttf">
+            <string>Gibson-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SplashViewController" customModule="MOA_Trax" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_background" translatesAutoresizingMaskIntoConstraints="NO" id="WnW-Jg-AYD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7M-Zx-bGD">
+                                <rect key="frame" x="0.0" y="44" width="375" height="268"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_appIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Whe-kb-aXn">
+                                        <rect key="frame" x="122.33333333333333" y="99" width="130.33333333333337" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="7RK-AZ-hr0"/>
+                                            <constraint firstAttribute="width" secondItem="Whe-kb-aXn" secondAttribute="height" multiplier="106:57" id="a8l-Ea-VPX"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Whe-kb-aXn" firstAttribute="centerY" secondItem="f7M-Zx-bGD" secondAttribute="centerY" id="KtS-6I-FKt"/>
+                                    <constraint firstItem="Whe-kb-aXn" firstAttribute="centerX" secondItem="f7M-Zx-bGD" secondAttribute="centerX" id="yfA-pC-VUR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WnW-Jg-AYD" secondAttribute="trailing" id="0KJ-bJ-aWM"/>
+                            <constraint firstItem="f7M-Zx-bGD" firstAttribute="height" secondItem="WnW-Jg-AYD" secondAttribute="height" multiplier="0.33" id="39h-zA-GMk"/>
+                            <constraint firstItem="WnW-Jg-AYD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FCt-Zp-6NR"/>
+                            <constraint firstItem="f7M-Zx-bGD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LWs-qN-NdS"/>
+                            <constraint firstAttribute="bottom" secondItem="WnW-Jg-AYD" secondAttribute="bottom" id="b2B-Ix-8t6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f7M-Zx-bGD" secondAttribute="trailing" id="dhN-Ti-JLh"/>
+                            <constraint firstItem="f7M-Zx-bGD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kss-S7-NYr"/>
+                            <constraint firstItem="WnW-Jg-AYD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wYB-nt-90P"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tDm-yy-dpI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1053.5999999999999" y="79.802955665024641"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="bxa-DD-LYC">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="SyJ-MX-7pT" customClass="LoginViewController" customModule="MOA_Trax" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9hr-4J-bg4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_backgroundFaded" translatesAutoresizingMaskIntoConstraints="NO" id="2r5-T0-8or">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zvu-nO-VGt">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ZH-7Y-K0m">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X MARKS THE SPOT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G65-Df-rmN">
+                                                <rect key="frame" x="16" y="123" width="343" height="24"/>
+                                                <fontDescription key="fontDescription" name="BigCaslonFB-Black" family="Big Caslon FB" pointSize="20"/>
+                                                <color key="textColor" name="#1E4051"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USE YOUR MY OUTDOOR AGENT ACCOUNT TO LOG IN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOI-nx-FXN">
+                                                <rect key="frame" x="50" y="163" width="275" height="37.333333333333343"/>
+                                                <fontDescription key="fontDescription" name="Gibson-Light" family="Gibson" pointSize="16"/>
+                                                <color key="textColor" name="#029378"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMf-82-feZ">
+                                                <rect key="frame" x="16" y="240.33333333333331" width="343" height="19.666666666666686"/>
+                                                <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="16"/>
+                                                <color key="textColor" name="#171717"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="02o-dw-247" customClass="CustomUIView" customModule="MOA_Trax" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="377.66666666666669" width="335" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3AT-2m-uf6">
+                                                        <rect key="frame" x="285" y="10" width="40" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="7ki-Wj-YXN"/>
+                                                            <constraint firstAttribute="width" constant="40" id="mHi-AL-aZs"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="3" minY="0.0" maxX="3" maxY="0.0"/>
+                                                        <state key="normal" image="ic_hidePass">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                                        </state>
+                                                        <state key="selected" image="ic_showPass"/>
+                                                        <connections>
+                                                            <action selector="showPasswordAction:" destination="SyJ-MX-7pT" eventType="touchUpInside" id="vTD-Qf-xc7"/>
+                                                        </connections>
+                                                    </button>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="znU-0B-g2i" customClass="CustomUITextField" customModule="MOA_Trax" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="277" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="PHG-cp-FaH"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" name="#8E8E8E"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="textFieldValueChanged:" destination="SyJ-MX-7pT" eventType="editingChanged" id="0X4-5O-ge8"/>
+                                                            <outlet property="delegate" destination="SyJ-MX-7pT" id="9ad-zx-KFP"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="3AT-2m-uf6" firstAttribute="centerY" secondItem="02o-dw-247" secondAttribute="centerY" id="Aqw-J4-Y9f"/>
+                                                    <constraint firstAttribute="height" constant="50" id="BFr-Nu-EXY"/>
+                                                    <constraint firstItem="znU-0B-g2i" firstAttribute="leading" secondItem="02o-dw-247" secondAttribute="leading" id="BIV-Kt-Q7A"/>
+                                                    <constraint firstAttribute="bottom" secondItem="znU-0B-g2i" secondAttribute="bottom" id="C7e-Te-igi"/>
+                                                    <constraint firstItem="znU-0B-g2i" firstAttribute="top" secondItem="02o-dw-247" secondAttribute="top" id="oXi-Pa-1Fj"/>
+                                                    <constraint firstItem="3AT-2m-uf6" firstAttribute="leading" secondItem="znU-0B-g2i" secondAttribute="trailing" constant="8" id="qKq-su-HpU"/>
+                                                    <constraint firstAttribute="trailing" secondItem="3AT-2m-uf6" secondAttribute="trailing" constant="10" id="qcm-4W-lEI"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="#111921"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="owO-gc-cjP">
+                                                <rect key="frame" x="16" y="443.66666666666669" width="144" height="35"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PX5-8v-YBC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="PX5-8v-YBC" secondAttribute="height" id="omV-OA-HUF"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                                        <state key="normal" image="ic_checkboxUnselected"/>
+                                                        <state key="selected" image="ic_checkboxSelected"/>
+                                                        <connections>
+                                                            <action selector="rememberMeAction:" destination="SyJ-MX-7pT" eventType="touchUpInside" id="0Fo-9L-VLq"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEF-V7-tK2">
+                                                        <rect key="frame" x="50" y="0.0" width="94" height="35"/>
+                                                        <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="16"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Remember Me">
+                                                            <color key="titleColor" name="#171717"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="Pab-wf-aQZ"/>
+                                                </constraints>
+                                            </stackView>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgp-lJ-Byn" customClass="CustomUIButton" customModule="MOA_Trax" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="518.66666666666663" width="343" height="50"/>
+                                                <color key="backgroundColor" name="#AAC3CE"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="bnE-ju-WsL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Gibson-SemiBold" family="Gibson" pointSize="18"/>
+                                                <state key="normal" title="Login">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="logInAction" destination="SyJ-MX-7pT" eventType="touchUpInside" id="O5Z-ze-PZK"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or continue with" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMa-fz-3rq">
+                                                <rect key="frame" x="139.33333333333334" y="608.66666666666663" width="96.666666666666657" height="17.333333333333371"/>
+                                                <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="14"/>
+                                                <color key="textColor" name="#171717"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gca-tp-aKt">
+                                                <rect key="frame" x="246" y="617" width="40" height="1"/>
+                                                <color key="backgroundColor" name="#171717"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="mtr-3S-QZd"/>
+                                                    <constraint firstAttribute="height" constant="1" id="z0Y-0Q-YGU"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hHE-3D-35R">
+                                                <rect key="frame" x="89.333333333333329" y="617" width="39.999999999999986" height="1"/>
+                                                <color key="backgroundColor" name="#171717"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="4Tg-Aw-YKI"/>
+                                                    <constraint firstAttribute="height" constant="1" id="lp4-nD-gbp"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="rNY-aO-rjq">
+                                                <rect key="frame" x="89.666666666666686" y="666" width="196" height="42"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxF-3Y-F7p">
+                                                        <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
+                                                        <state key="normal" image="ic_apple"/>
+                                                        <connections>
+                                                            <action selector="logInWithSocailActionWithSender:" destination="SyJ-MX-7pT" eventType="touchUpInside" id="bIj-vC-Ejb"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLb-8T-OoN">
+                                                        <rect key="frame" x="76.999999999999986" y="0.0" width="42" height="42"/>
+                                                        <state key="normal" image="ic_google"/>
+                                                        <connections>
+                                                            <action selector="logInWithSocailActionWithSender:" destination="SyJ-MX-7pT" eventType="touchUpInside" id="FmA-Lu-a8X"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84P-gJ-S77">
+                                                        <rect key="frame" x="154" y="0.0" width="42" height="42"/>
+                                                        <state key="normal" image="ic_facebook"/>
+                                                        <connections>
+                                                            <action selector="logInWithSocailActionWithSender:" destination="SyJ-MX-7pT" eventType="touchUpInside" id="Uqa-hO-q0q"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="ADj-fc-JlP"/>
+                                                </constraints>
+                                            </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_appIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ZyL-aS-kOI">
+                                                <rect key="frame" x="128.33333333333334" y="40" width="118.33333333333334" height="67"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="67" id="7LQ-st-o1i"/>
+                                                    <constraint firstAttribute="width" secondItem="ZyL-aS-kOI" secondAttribute="height" multiplier="53:30" id="Ru6-Ys-RXH"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cTB-8D-wrj" customClass="CustomUITextField" customModule="MOA_Trax" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="276" width="343" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Z9S-rH-1q0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                        <color key="value" name="#8E8E8E"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="#111921"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="textFieldValueChanged:" destination="SyJ-MX-7pT" eventType="editingChanged" id="1pX-M1-5sP"/>
+                                                    <outlet property="delegate" destination="SyJ-MX-7pT" id="LBr-hr-lWo"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUP-3a-kPb">
+                                                <rect key="frame" x="16" y="342" width="343" height="19.666666666666686"/>
+                                                <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="16"/>
+                                                <color key="textColor" name="#171717"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="bOI-nx-FXN" secondAttribute="trailing" constant="50" id="2oE-gf-Ion"/>
+                                            <constraint firstItem="NMa-fz-3rq" firstAttribute="centerX" secondItem="2ZH-7Y-K0m" secondAttribute="centerX" id="7Va-Y2-Zlv"/>
+                                            <constraint firstItem="hHE-3D-35R" firstAttribute="top" secondItem="Gca-tp-aKt" secondAttribute="top" id="8H4-Es-Im8"/>
+                                            <constraint firstAttribute="trailing" secondItem="cTB-8D-wrj" secondAttribute="trailing" constant="16" id="B5l-2V-52u"/>
+                                            <constraint firstItem="02o-dw-247" firstAttribute="top" secondItem="GUP-3a-kPb" secondAttribute="bottom" constant="16" id="Byt-X6-rab"/>
+                                            <constraint firstItem="NMa-fz-3rq" firstAttribute="top" secondItem="mgp-lJ-Byn" secondAttribute="bottom" constant="40" id="DKO-Ix-fHY"/>
+                                            <constraint firstItem="02o-dw-247" firstAttribute="leading" secondItem="2ZH-7Y-K0m" secondAttribute="leading" constant="20" id="EaF-v1-tvM"/>
+                                            <constraint firstItem="bOI-nx-FXN" firstAttribute="leading" secondItem="2ZH-7Y-K0m" secondAttribute="leading" constant="50" id="GEw-Qu-yAS"/>
+                                            <constraint firstAttribute="trailing" secondItem="mgp-lJ-Byn" secondAttribute="trailing" constant="16" id="GJL-nO-LgA"/>
+                                            <constraint firstItem="GUP-3a-kPb" firstAttribute="leading" secondItem="2ZH-7Y-K0m" secondAttribute="leading" constant="16" id="Lyv-8X-qhM"/>
+                                            <constraint firstItem="G65-Df-rmN" firstAttribute="leading" secondItem="2ZH-7Y-K0m" secondAttribute="leading" constant="16" id="MqM-Ud-sMI"/>
+                                            <constraint firstItem="mgp-lJ-Byn" firstAttribute="top" secondItem="owO-gc-cjP" secondAttribute="bottom" constant="40" id="QOy-2z-HxH"/>
+                                            <constraint firstItem="owO-gc-cjP" firstAttribute="leading" secondItem="2ZH-7Y-K0m" secondAttribute="leading" constant="16" id="QbT-OG-Id8"/>
+                                            <constraint firstAttribute="trailing" secondItem="GUP-3a-kPb" secondAttribute="trailing" constant="16" id="T3n-wa-aMx"/>
+                                            <constraint firstItem="rNY-aO-rjq" firstAttribute="top" secondItem="NMa-fz-3rq" secondAttribute="bottom" constant="40" id="Wuy-YE-jpX"/>
+                                            <constraint firstItem="owO-gc-cjP" firstAttribute="top" secondItem="02o-dw-247" secondAttribute="bottom" constant="16" id="YOr-FV-Dv6"/>
+                                            <constraint firstItem="mgp-lJ-Byn" firstAttribute="leading" secondItem="2ZH-7Y-K0m" secondAttribute="leading" constant="16" id="aI8-Np-r8S"/>
+                                            <constraint firstItem="cTB-8D-wrj" firstAttribute="leading" secondItem="2ZH-7Y-K0m" secondAttribute="leading" constant="16" id="aTm-L2-6HV"/>
+                                            <constraint firstItem="NMa-fz-3rq" firstAttribute="leading" secondItem="hHE-3D-35R" secondAttribute="trailing" constant="10" id="ahb-JT-nbO"/>
+                                            <constraint firstItem="ZyL-aS-kOI" firstAttribute="centerX" secondItem="2ZH-7Y-K0m" secondAttribute="centerX" id="bmr-Je-szX"/>
+                                            <constraint firstItem="rNY-aO-rjq" firstAttribute="centerX" secondItem="2ZH-7Y-K0m" secondAttribute="centerX" id="bpo-eZ-FoW"/>
+                                            <constraint firstItem="GUP-3a-kPb" firstAttribute="top" secondItem="cTB-8D-wrj" secondAttribute="bottom" constant="16" id="bwT-Sh-Q69"/>
+                                            <constraint firstItem="Gca-tp-aKt" firstAttribute="leading" secondItem="NMa-fz-3rq" secondAttribute="trailing" constant="10" id="ed6-a1-bnv"/>
+                                            <constraint firstAttribute="trailing" secondItem="hMf-82-feZ" secondAttribute="trailing" constant="16" id="hm4-uD-QTn"/>
+                                            <constraint firstItem="ZyL-aS-kOI" firstAttribute="top" secondItem="2ZH-7Y-K0m" secondAttribute="top" constant="40" id="imv-bn-Kn1"/>
+                                            <constraint firstItem="hMf-82-feZ" firstAttribute="top" secondItem="bOI-nx-FXN" secondAttribute="bottom" constant="40" id="l82-1J-tTP"/>
+                                            <constraint firstAttribute="trailing" secondItem="02o-dw-247" secondAttribute="trailing" constant="20" id="mBW-O8-7AF"/>
+                                            <constraint firstAttribute="bottom" secondItem="rNY-aO-rjq" secondAttribute="bottom" constant="50" id="mKP-hY-s5s"/>
+                                            <constraint firstItem="hMf-82-feZ" firstAttribute="leading" secondItem="2ZH-7Y-K0m" secondAttribute="leading" constant="16" id="ogP-0a-HKF"/>
+                                            <constraint firstItem="Gca-tp-aKt" firstAttribute="centerY" secondItem="NMa-fz-3rq" secondAttribute="centerY" id="ozG-Oe-7cP"/>
+                                            <constraint firstItem="G65-Df-rmN" firstAttribute="top" secondItem="ZyL-aS-kOI" secondAttribute="bottom" constant="16" id="qny-BB-vGC"/>
+                                            <constraint firstAttribute="trailing" secondItem="G65-Df-rmN" secondAttribute="trailing" constant="16" id="sCr-QX-n35"/>
+                                            <constraint firstItem="bOI-nx-FXN" firstAttribute="top" secondItem="G65-Df-rmN" secondAttribute="bottom" constant="16" id="xdK-eJ-Vuy"/>
+                                            <constraint firstItem="cTB-8D-wrj" firstAttribute="top" secondItem="hMf-82-feZ" secondAttribute="bottom" constant="16" id="zjD-83-4uv"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="2ZH-7Y-K0m" secondAttribute="trailing" id="7s4-TB-upO"/>
+                                    <constraint firstItem="2ZH-7Y-K0m" firstAttribute="width" secondItem="Zvu-nO-VGt" secondAttribute="width" id="9Ws-qi-I8Q"/>
+                                    <constraint firstItem="2ZH-7Y-K0m" firstAttribute="leading" secondItem="Zvu-nO-VGt" secondAttribute="leading" id="FK5-ON-GBz"/>
+                                    <constraint firstAttribute="bottom" secondItem="2ZH-7Y-K0m" secondAttribute="bottom" id="LHi-iZ-ti9"/>
+                                    <constraint firstItem="2ZH-7Y-K0m" firstAttribute="top" secondItem="Zvu-nO-VGt" secondAttribute="top" id="Lyb-tL-pde"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8mh-35-EzU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8mh-35-EzU" firstAttribute="bottom" secondItem="Zvu-nO-VGt" secondAttribute="bottom" id="5CG-ck-hjD"/>
+                            <constraint firstItem="8mh-35-EzU" firstAttribute="trailing" secondItem="Zvu-nO-VGt" secondAttribute="trailing" id="8jB-V9-8Sw"/>
+                            <constraint firstItem="2r5-T0-8or" firstAttribute="leading" secondItem="8mh-35-EzU" secondAttribute="leading" id="ALt-re-2Nv"/>
+                            <constraint firstItem="Zvu-nO-VGt" firstAttribute="leading" secondItem="8mh-35-EzU" secondAttribute="leading" id="DJo-hD-B0a"/>
+                            <constraint firstItem="Zvu-nO-VGt" firstAttribute="top" secondItem="8mh-35-EzU" secondAttribute="top" id="FPX-H9-waR"/>
+                            <constraint firstAttribute="bottom" secondItem="2r5-T0-8or" secondAttribute="bottom" id="XyK-1h-YZp"/>
+                            <constraint firstItem="2r5-T0-8or" firstAttribute="top" secondItem="9hr-4J-bg4" secondAttribute="top" id="whF-gu-f6J"/>
+                            <constraint firstItem="8mh-35-EzU" firstAttribute="trailing" secondItem="2r5-T0-8or" secondAttribute="trailing" id="xx0-Nn-Ssf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnLogin" destination="mgp-lJ-Byn" id="TqA-yy-CbH"/>
+                        <outlet property="btnRememberMe" destination="PX5-8v-YBC" id="R30-V3-8Vf"/>
+                        <outlet property="txtFldEmail" destination="cTB-8D-wrj" id="Oi3-IQ-KPs"/>
+                        <outlet property="txtFldPassword" destination="znU-0B-g2i" id="dGr-3t-ni0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rBL-YH-RoO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1869.5999999999999" y="84.236453201970448"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Cdw-Db-y2x">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="c2F-FK-VsT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BcC-sX-cz2">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ixP-oh-0i4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cbU-38-vKw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111.2" y="79.802955665024641"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="cTB-8D-wrj">
+            <size key="intrinsicContentSize" width="67" height="21.333333333333332"/>
+        </designable>
+        <designable name="mgp-lJ-Byn">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+        <designable name="znU-0B-g2i">
+            <size key="intrinsicContentSize" width="67" height="20"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_appIcon" width="383.66665649414062" height="205"/>
+        <image name="ic_apple" width="42" height="42"/>
+        <image name="ic_background" width="375" height="812"/>
+        <image name="ic_backgroundFaded" width="375" height="812"/>
+        <image name="ic_checkboxSelected" width="58" height="58"/>
+        <image name="ic_checkboxUnselected" width="58" height="58"/>
+        <image name="ic_facebook" width="42" height="42"/>
+        <image name="ic_google" width="42" height="42"/>
+        <image name="ic_hidePass" width="58" height="58"/>
+        <image name="ic_showPass" width="58" height="58"/>
+        <namedColor name="#029378">
+            <color red="0.0080000003799796104" green="0.57599997520446777" blue="0.47099998593330383" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="#111921">
+            <color red="0.067000001668930054" green="0.097999997437000275" blue="0.1289999932050705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="#171717">
+            <color red="0.090000003576278687" green="0.090000003576278687" blue="0.090000003576278687" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="#1E4051">
+            <color red="0.11800000071525574" green="0.25099998712539673" blue="0.31799998879432678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="#8E8E8E">
+            <color red="0.55699998140335083" green="0.55699998140335083" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="#AAC3CE">
+            <color red="0.66699999570846558" green="0.76499998569488525" blue="0.80800002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

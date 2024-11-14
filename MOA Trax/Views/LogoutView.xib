@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gibson-Regular.ttf">
+            <string>Gibson-Regular</string>
+        </array>
+        <array key="Gibson-SemiBold.ttf">
+            <string>Gibson-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="LogoutView" id="iN0-l3-epB" customClass="LogoutView" customModule="MOA_Trax" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Mz-Z9-bjb">
+                    <rect key="frame" x="0.0" y="916" width="414" height="250"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jZs-mn-n7j" customClass="CustomUIView" customModule="MOA_Trax" customModuleProvider="target">
+                            <rect key="frame" x="187" y="15" width="40" height="5"/>
+                            <color key="backgroundColor" red="0.83137254901960778" green="0.83137254901960778" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="5" id="3kk-N0-QSm"/>
+                                <constraint firstAttribute="width" constant="40" id="NiK-0e-dvR"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="2.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8a-Xn-PA2">
+                            <rect key="frame" x="173" y="40" width="68.5" height="20"/>
+                            <fontDescription key="fontDescription" name="Gibson-SemiBold" family="Gibson" pointSize="20"/>
+                            <color key="textColor" name="#171717"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You won't be able to sign in again without connectivity" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BD-HL-GUv">
+                            <rect key="frame" x="40" y="80" width="334" height="42"/>
+                            <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="17"/>
+                            <color key="textColor" name="#171717"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="FOW-gx-2ea">
+                            <rect key="frame" x="20" y="162" width="374" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="sgb-Qc-r4U">
+                                    <rect key="frame" x="0.0" y="0.0" width="174.5" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Gibson-SemiBold" family="Gibson" pointSize="17"/>
+                                    <state key="normal" title="Cancel">
+                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="acnCancel" destination="iN0-l3-epB" eventType="touchUpInside" id="qNa-D2-iHP"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtw-eG-VIy" customClass="CustomUIButton" customModule="MOA_Trax" customModuleProvider="target">
+                                    <rect key="frame" x="199.5" y="0.0" width="174.5" height="50"/>
+                                    <color key="backgroundColor" red="0.11764705882352941" green="0.25098039215686274" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="Gibson-SemiBold" family="Gibson" pointSize="16"/>
+                                    <state key="normal" title="Log Out">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="acnLogOut" destination="iN0-l3-epB" eventType="touchUpInside" id="pra-y6-dYn"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="6pn-C6-cD4"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="7BD-HL-GUv" secondAttribute="trailing" constant="40" id="4bR-8M-ald"/>
+                        <constraint firstItem="S8a-Xn-PA2" firstAttribute="top" secondItem="jZs-mn-n7j" secondAttribute="bottom" constant="20" id="E7t-5f-vZb"/>
+                        <constraint firstAttribute="height" constant="250" id="Gzn-sm-q7Q"/>
+                        <constraint firstItem="7BD-HL-GUv" firstAttribute="leading" secondItem="3Mz-Z9-bjb" secondAttribute="leading" constant="40" id="IQ0-Ex-pGC"/>
+                        <constraint firstAttribute="trailing" secondItem="FOW-gx-2ea" secondAttribute="trailing" constant="20" id="Ip4-cg-BG2"/>
+                        <constraint firstItem="jZs-mn-n7j" firstAttribute="top" secondItem="3Mz-Z9-bjb" secondAttribute="top" constant="15" id="Pir-14-D2e"/>
+                        <constraint firstItem="FOW-gx-2ea" firstAttribute="top" secondItem="7BD-HL-GUv" secondAttribute="bottom" constant="40" id="ceQ-xw-Eob"/>
+                        <constraint firstItem="S8a-Xn-PA2" firstAttribute="centerX" secondItem="3Mz-Z9-bjb" secondAttribute="centerX" id="jH8-Ek-XhM"/>
+                        <constraint firstItem="7BD-HL-GUv" firstAttribute="top" secondItem="S8a-Xn-PA2" secondAttribute="bottom" constant="20" id="nJy-wN-dzT"/>
+                        <constraint firstItem="FOW-gx-2ea" firstAttribute="leading" secondItem="3Mz-Z9-bjb" secondAttribute="leading" constant="20" id="yDH-FT-ZsK"/>
+                        <constraint firstItem="jZs-mn-n7j" firstAttribute="centerX" secondItem="3Mz-Z9-bjb" secondAttribute="centerX" id="zqa-Mg-Key"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.50972682119205293" colorSpace="custom" customColorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="3Mz-Z9-bjb" secondAttribute="bottom" constant="-270" id="1x9-aQ-ned"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3Mz-Z9-bjb" secondAttribute="trailing" id="qkI-M8-Hc6"/>
+                <constraint firstItem="3Mz-Z9-bjb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="we6-4o-Dkf"/>
+            </constraints>
+            <connections>
+                <outlet property="btnCancel" destination="sgb-Qc-r4U" id="n1w-Ee-HBe"/>
+                <outlet property="btnLogout" destination="dtw-eG-VIy" id="ciz-2Q-Fam"/>
+                <outlet property="logoutViewBottomConstraint" destination="1x9-aQ-ned" id="Tad-jN-hm9"/>
+                <outlet property="viewLogout" destination="3Mz-Z9-bjb" id="PR7-0r-OOT"/>
+            </connections>
+            <point key="canvasLocation" x="111.59420289855073" y="34.821428571428569"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="dtw-eG-VIy">
+            <size key="intrinsicContentSize" width="58" height="28"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="#171717">
+            <color red="0.090000003576278687" green="0.090000003576278687" blue="0.090000003576278687" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

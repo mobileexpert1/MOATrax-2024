@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="20G165" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDMapFile" representedClassName="CDMapFile" syncable="YES">
+        <attribute name="mapFile" optional="YES" attributeType="String"/>
+        <attribute name="mapFileID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="mapFileLocalUrl" optional="YES" attributeType="String" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="mapFileName" optional="YES" attributeType="String"/>
+        <attribute name="mapInfoJson" optional="YES" attributeType="String"/>
+        <relationship name="toProduct" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDProduct" inverseName="toMapFile" inverseEntity="CDProduct"/>
+    </entity>
+    <entity name="CDProduct" representedClassName="CDProduct" syncable="YES">
+        <attribute name="displayName" optional="YES" attributeType="String"/>
+        <attribute name="productID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="productName" optional="YES" attributeType="String"/>
+        <attribute name="productNo" optional="YES" attributeType="String"/>
+        <relationship name="toMapFile" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDMapFile" inverseName="toProduct" inverseEntity="CDMapFile"/>
+    </entity>
+    <elements>
+        <element name="CDMapFile" positionX="-54" positionY="45" width="128" height="119"/>
+        <element name="CDProduct" positionX="-63" positionY="-18" width="128" height="104"/>
+    </elements>
+</model>
